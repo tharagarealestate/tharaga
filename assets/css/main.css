@@ -778,16 +778,21 @@ section,
 }
 
 .hero .hero-content .content-header h1 {
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.1;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #D1B464, #F6E4B3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
   margin-bottom: 20px;
-  color: var(--heading-color);
 }
 
 @media (max-width: 768px) {
   .hero .hero-content .content-header h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
   }
 }
 
