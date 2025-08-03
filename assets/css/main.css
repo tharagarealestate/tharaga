@@ -15,7 +15,7 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --heading-font: "Playfair Display",  serif;
   --nav-font: "Montserrat",  sans-serif;
 }
 
@@ -154,7 +154,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #077f46;
+  --background-color: #dce3e8;;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -730,7 +730,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding-top: 80px;
-  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  background: #e8f1f8;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -759,6 +759,12 @@ section,
   margin-bottom: 48px;
 }
 
+.hero .hero-content {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .hero .hero-content .content-header .hero-label {
   display: inline-flex;
   align-items: center;
@@ -778,15 +784,12 @@ section,
 }
 
 .hero .hero-content .content-header h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 4rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #D1B464, #F6E4B3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1e2b3c; /* Premium dark navy */
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
