@@ -728,7 +728,6 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -737,7 +736,6 @@ section,
   background: linear-gradient(#f4f4f4, #e9ecef);
 }
 
-.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -748,28 +746,23 @@ section,
   z-index: 1;
 }
 
-.hero .hero-wrapper {
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-content .content-header {
   margin-bottom: 48px;
 }
 
-.hero .hero-content {
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.hero .hero-content {
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.hero .hero-content .content-header .hero-label {
   font-size: 14px;
   padding: 10px 18px;
   border-radius: 30px;
@@ -782,11 +775,9 @@ section,
   gap: 8px;
 }
 
-.hero .hero-content .content-header .hero-label i {
   font-size: 16px;
 }
 
-.hero .hero-content .content-header h1 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.2;
@@ -797,20 +788,17 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero .hero-content .content-header h1 {
     font-size: 2.2rem;
     line-height: 1.3;
   }
 }
 
-.hero .hero-content .content-header p {
   font-size: 1.15rem;
   line-height: 1.6;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin: 0;
 }
 
-.hero .hero-content .search-container {
   background: var(--surface-color);
   border-radius: 24px;
   padding: 36px;
@@ -819,25 +807,21 @@ section,
   margin-bottom: 40px;
 }
 
-.hero .hero-content .search-container .search-header {
   text-align: center;
   margin-bottom: 32px;
 }
 
-.hero .hero-content .search-container .search-header h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 8px;
   color: var(--heading-color);
 }
 
-.hero .hero-content .search-container .search-header p {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
   font-size: 15px;
 }
 
-.hero .hero-content .search-container .property-search-form .search-grid {
   display: grid;
   grid-template-columns: 1fr;  /* changed from 1fr 1fr to 1fr */
   gap: 16px;                    /* gap changed from 20px to 16px */
@@ -845,17 +829,14 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero .hero-content .search-container .property-search-form .search-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 }
 
-.hero .hero-content .search-container .property-search-form .search-field {
   position: relative;
 }
 
-.hero .hero-content .search-container .property-search-form .search-field .field-label {
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -863,8 +844,6 @@ section,
   margin-bottom: 8px;
 }
 
-.hero .hero-content .search-container .property-search-form .search-field input,
-.hero .hero-content .search-container .property-search-form .search-field select {
   width: 100%;
   padding: 14px 16px 14px 44px;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 88%);
@@ -878,19 +857,14 @@ section,
   appearance: none;
 }
 
-.hero .hero-content .search-container .property-search-form .search-field input:focus,
-.hero .hero-content .search-container .property-search-form .search-field select:focus {
   border-color: var(--accent-color);
   outline: none;
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.hero .hero-content .search-container .property-search-form .search-field input::placeholder,
-.hero .hero-content .search-container .property-search-form .search-field select::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-.hero .hero-content .search-container .property-search-form .search-field select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 16px center;
   background-repeat: no-repeat;
@@ -898,7 +872,6 @@ section,
   padding-right: 44px;
 }
 
-.hero .hero-content .search-container .property-search-form .search-field .field-icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -909,7 +882,6 @@ section,
   pointer-events: none;
 }
 
-.hero .hero-content .search-container .property-search-form .search-btn {
   width: 100%;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -925,30 +897,25 @@ section,
   transition: all 0.3s ease;
 }
 
-.hero .hero-content .search-container .property-search-form .search-btn:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   transform: translateY(-3px);
   box-shadow: 0 12px 30px color-mix(in srgb, var(--accent-color), transparent 65%);
 }
 
-.hero .hero-content .search-container .property-search-form .search-btn i {
   font-size: 18px;
 }
 
-.hero .hero-content .achievement-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 @media (max-width: 576px) {
-  .hero .hero-content .achievement-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 }
 
-.hero .hero-content .achievement-grid .achievement-item {
   text-align: center;
   padding: 20px 16px;
   background: var(--surface-color);
@@ -956,7 +923,6 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
-.hero .hero-content .achievement-grid .achievement-item .achievement-number {
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--accent-color);
@@ -964,18 +930,15 @@ section,
   margin-bottom: 8px;
 }
 
-.hero .hero-content .achievement-grid .achievement-item .achievement-text {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
   font-weight: 600;
 }
 
-.hero .hero-visual .visual-container {
   position: relative;
   height: 650px;
 }
 
-.hero .hero-visual .visual-container .featured-property {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
@@ -983,13 +946,11 @@ section,
   box-shadow: 0 30px 60px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.hero .hero-visual .visual-container .featured-property img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero .hero-visual .visual-container .featured-property .property-info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -999,19 +960,16 @@ section,
   color: white;
 }
 
-.hero .hero-visual .visual-container .featured-property .property-info .property-price {
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 12px;
 }
 
-.hero .hero-visual .visual-container .featured-property .property-info .property-details {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.hero .hero-visual .visual-container .featured-property .property-info .property-details span {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1019,11 +977,9 @@ section,
   opacity: 0.9;
 }
 
-.hero .hero-visual .visual-container .featured-property .property-info .property-details span i {
   font-size: 13px;
 }
 
-.hero .hero-visual .visual-container .overlay-images .overlay-img {
   position: absolute;
   border-radius: 16px;
   overflow: hidden;
@@ -1031,27 +987,23 @@ section,
   border: 4px solid var(--surface-color);
 }
 
-.hero .hero-visual .visual-container .overlay-images .overlay-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero .hero-visual .visual-container .overlay-images .overlay-1 {
   top: 60px;
   right: -40px;
   width: 140px;
   height: 140px;
 }
 
-.hero .hero-visual .visual-container .overlay-images .overlay-2 {
   top: 240px;
   right: -20px;
   width: 120px;
   height: 120px;
 }
 
-.hero .hero-visual .visual-container .agent-card {
   margin-top: 20px;
   background: var(--surface-color);
   padding: 20px;
@@ -1064,13 +1016,11 @@ section,
   justify-content: space-between;
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-photo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1078,42 +1028,35 @@ section,
   border: 3px solid var(--accent-color);
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info h4 {
   margin: 0 0 4px;
   font-size: 16px;
   font-weight: 700;
   color: var(--heading-color);
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info p {
   margin: 0 0 8px;
   font-size: 13px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info .agent-rating {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info .agent-rating .stars {
   display: flex;
   gap: 2px;
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info .agent-rating .stars i {
   color: #ffc107;
   font-size: 11px;
 }
 
-.hero .hero-visual .visual-container .agent-card .agent-profile .agent-info .agent-rating .rating-text {
   font-size: 12px;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
   font-weight: 600;
 }
 
-.hero .hero-visual .visual-container .agent-card .contact-agent-btn {
   width: 44px;
   height: 44px;
   background: var(--accent-color);
@@ -1126,59 +1069,48 @@ section,
   transition: all 0.3s ease;
 }
 
-.hero .hero-visual .visual-container .agent-card .contact-agent-btn:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   transform: scale(1.1);
 }
 
-.hero .hero-visual .visual-container .agent-card .contact-agent-btn i {
   font-size: 16px;
 }
 
 @media (max-width: 992px) {
-  .hero {
     padding: 100px 0 60px;
   }
 
-  .hero .hero-visual {
     margin-top: 60px;
   }
 
-  .hero .hero-visual .visual-container {
     height: 500px;
   }
 
-  .hero .hero-visual .visual-container .featured-property {
     height: 380px;
   }
 
-  .hero .hero-visual .visual-container .overlay-images .overlay-1 {
     top: 40px;
     right: -20px;
     width: 120px;
     height: 120px;
   }
 
-  .hero .hero-visual .visual-container .overlay-images .overlay-2 {
     top: 180px;
     right: 0;
     width: 100px;
     height: 100px;
   }
 
-  .hero .hero-visual .visual-container .agent-card {
     bottom: -10px;
     left: -20px;
     width: 280px;
     padding: 16px;
   }
 
-  .hero .hero-visual .visual-container .agent-card .agent-profile .agent-photo {
     width: 50px;
     height: 50px;
   }
 
-  .hero .search-container {
     max-width: 600px;
     margin: 0 auto 40px;
     padding: 28px;
@@ -1189,63 +1121,49 @@ section,
 }
 
 @media (max-width: 576px) {
-  .hero {
     padding: 80px 0 40px;
   }
 
-  .hero .hero-content .content-header .hero-label {
     padding: 10px 16px;
     font-size: 14px;
   }
 
-  .hero .search-container {
     padding: 20px;
   }
 
-  .hero .search-container .search-header h3 {
     font-size: 1.3rem;
   }
 
-  .hero .achievement-grid .achievement-item {
     padding: 16px 12px;
   }
 
-  .hero .achievement-grid .achievement-item .achievement-number {
     font-size: 1.8rem;
   }
 
-  .hero .hero-visual .visual-container .featured-property {
     height: 300px;
   }
 
-  .hero .hero-visual .visual-container .featured-property .property-info {
     padding: 30px 20px 20px;
   }
 
-  .hero .hero-visual .visual-container .featured-property .property-info .property-price {
     font-size: 1.5rem;
   }
 
-  .hero .hero-visual .visual-container .overlay-images .overlay-1 {
     width: 100px;
     height: 100px;
   }
 
-  .hero .hero-visual .visual-container .overlay-images .overlay-2 {
     width: 80px;
     height: 80px;
   }
 
-  .hero .hero-visual .visual-container .agent-card {
     width: 100%;
     padding: 14px;
   }
 
-  .hero .hero-visual .visual-container .agent-card .agent-profile {
     gap: 12px;
   }
 
-  .hero .hero-visual .visual-container .agent-card .agent-profile .agent-info h4 {
     font-size: 15px;
   }
 }
@@ -1596,39 +1514,32 @@ section,
   font-size: 16px;
 }
 
-.featured-properties .featured-property-main .property-hero-content {
   padding: 30px;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info {
   flex: 1;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info h2 {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 12px;
   line-height: 1.3;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info h2 a {
   color: var(--heading-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info h2 a:hover {
   color: var(--accent-color);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info .property-address {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1637,12 +1548,10 @@ section,
   font-weight: 500;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-info .property-address i {
   color: var(--accent-color);
   font-size: 18px;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-header .property-price-main {
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), blue 20%));
   color: var(--contrast-color);
   padding: 15px 25px;
@@ -1652,21 +1561,18 @@ section,
   box-shadow: 0 4px 20px rgba(54, 144, 231, 0.3);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-description {
   font-size: 16px;
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 15%);
   margin-bottom: 25px;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main {
   display: flex;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .btn-primary-custom {
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), blue 20%));
   color: var(--contrast-color);
   padding: 14px 28px;
@@ -1680,12 +1586,10 @@ section,
   box-shadow: 0 4px 15px rgba(54, 144, 231, 0.3);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .btn-primary-custom:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(54, 144, 231, 0.4);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .btn-outline-custom {
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
   padding: 12px 26px;
@@ -1698,12 +1602,10 @@ section,
   transition: all 0.3s ease;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .btn-outline-custom:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info {
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -1711,7 +1613,6 @@ section,
   gap: 5px;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info .listing-status {
   background-color: color-mix(in srgb, #28a745, transparent 85%);
   color: #28a745;
   padding: 5px 15px;
@@ -1721,12 +1622,10 @@ section,
   text-transform: uppercase;
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info .listing-status.for-sale {
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   color: var(--accent-color);
 }
 
-.featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info .listing-date {
   font-size: 13px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-weight: 500;
@@ -2046,16 +1945,13 @@ section,
 }
 
 @media (max-width: 992px) {
-  .featured-properties .featured-property-main .property-hero-content .property-header {
     flex-direction: column;
     gap: 20px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-header .property-price-main {
     align-self: flex-start;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info {
     margin-left: 0;
     align-items: flex-start;
   }
@@ -2075,26 +1971,21 @@ section,
     gap: 10px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content {
     padding: 25px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-header .property-info h2 {
     font-size: 24px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-header .property-price-main {
     font-size: 20px;
     padding: 12px 20px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-actions-main {
     flex-direction: column;
     align-items: stretch;
     gap: 15px;
   }
 
-  .featured-properties .featured-property-main .property-hero-content .property-actions-main .property-listing-info {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -3568,11 +3459,9 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .hero-content {
   margin-bottom: 4rem;
 }
 
-.about .hero-content h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--heading-color), var(--accent-color));
@@ -3584,7 +3473,6 @@ section,
 }
 
 @media (max-width: 768px) {
-  .about .hero-content h2 {
     font-size: 2.2rem;
     background: none;
     -webkit-text-fill-color: initial;
@@ -3592,7 +3480,6 @@ section,
   }
 }
 
-.about .hero-content .hero-description {
   font-size: 1.2rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   line-height: 1.7;
@@ -4753,24 +4640,20 @@ section,
 /*--------------------------------------------------------------
 # Property Details Section
 --------------------------------------------------------------*/
-.property-details .property-hero .hero-image-container {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-wrapper {
   height: auto !important;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -4784,13 +4667,11 @@ section,
   z-index: 5;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .property-badge {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .property-badge .status-badge {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 8px 16px;
@@ -4800,11 +4681,9 @@ section,
   text-transform: uppercase;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .property-badge .status-badge.for-rent {
   background: #28a745;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .property-badge .featured-badge {
   background: #ff6b35;
   color: var(--contrast-color);
   padding: 6px 12px;
@@ -4814,7 +4693,6 @@ section,
   text-transform: uppercase;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .virtual-tour-btn {
   background: rgba(255, 255, 255, 0.95);
   border: none;
   color: var(--accent-color);
@@ -4827,18 +4705,14 @@ section,
   transition: all 0.3s ease;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .virtual-tour-btn i {
   font-size: 20px;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .hero-overlay .virtual-tour-btn:hover {
   background: var(--surface-color);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next,
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev {
   width: 45px;
   height: 45px;
   background: rgba(255, 255, 255, 0.9);
@@ -4848,24 +4722,18 @@ section,
   color: var(--accent-color);
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next:after,
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev:after {
   font-size: 16px;
   color: var(--accent-color);
   font-weight: 700;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next:hover,
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev:hover {
   transform: scale(1.1);
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next {
   right: 20px;
   transition: 0.3s;
 }
 
-.property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev {
   left: 20px;
   transition: 0.3s;
 }
@@ -5467,23 +5335,17 @@ section,
 
 @media (max-width: 768px) {
 
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next,
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev {
     width: 35px;
     height: 35px;
     margin-top: -17.5px;
   }
 
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next:after,
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev:after {
     font-size: 14px;
   }
 
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-next {
     right: 10px;
   }
 
-  .property-details .property-hero .hero-image-container .property-gallery-slider .swiper-button-prev {
     left: 10px;
   }
 
@@ -5824,45 +5686,38 @@ section,
   font-weight: 500;
 }
 
-.agent-profile .hero-actions {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.agent-profile .hero-actions .btn {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.agent-profile .hero-actions .btn.btn-primary {
   background: var(--accent-color);
   border: 2px solid var(--accent-color);
   color: var(--contrast-color);
 }
 
-.agent-profile .hero-actions .btn.btn-primary:hover {
   background: color-mix(in srgb, var(--accent-color), black 10%);
   border-color: color-mix(in srgb, var(--accent-color), black 10%);
   transform: translateY(-2px);
 }
 
-.agent-profile .hero-actions .btn.btn-outline {
   background: transparent;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
 }
 
-.agent-profile .hero-actions .btn.btn-outline:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
 
 @media (max-width: 576px) {
-  .agent-profile .hero-actions .btn {
     width: 100%;
     text-align: center;
   }
@@ -9089,7 +8944,6 @@ section,
 .header {
   background-color: #1a2a30; /* Classy dark blue-grey */
 }
-.hero-minimal {
   background: linear-gradient(145deg, #1E2C34, #101820);
   padding: 140px 20px;
   color: #fff;
@@ -9099,11 +8953,9 @@ section,
   justify-content: center;
 }
 
-.hero-minimal .container {
   max-width: 900px;
 }
 
-.hero-luxury-title {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   font-weight: 400;
@@ -9112,13 +8964,11 @@ section,
   margin-bottom: 30px;
 }
 
-.hero-luxury-title .hero-sub {
   display: block;
   font-weight: 300;
   color: #ccc;
 }
 
-.hero-button {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   text-decoration: none;
@@ -9127,18 +8977,15 @@ section,
   transition: all 0.3s ease;
 }
 
-.hero-button:hover {
   color: #fff;
   border-color: #fff;
 }
 
 @media (max-width: 768px) {
-  .hero .hero-content .content-header h1 {
     font-size: 2.5rem;
     text-align: center;
   }
 
-  .hero .search-container {
     padding: 20px;
   }
 }
@@ -9150,7 +8997,6 @@ section,
   /* Add your styles here */
 }
 
-.hero {
   position: relative;
   background: url('/assets/images/hero.jpg') center/cover no-repeat;
   color: #fff;
@@ -9162,7 +9008,6 @@ section,
   padding: 80px 20px;
 }
 
-.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -9172,31 +9017,26 @@ section,
   z-index: 1;
 }
 
-.hero-content {
   position: relative;
   z-index: 2;
   max-width: 960px;
   margin: auto;
 }
 
-.hero h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 
-.hero h1 span {
   color: #e94e3d;
 }
 
-.hero-subtext {
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.9;
 }
 
-.search-container {
   background: #fff;
   border-radius: 10px;
   padding: 24px;
@@ -9234,15 +9074,116 @@ section,
   cursor: pointer;
 }
 
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero {
+  position: relative;
+  background: url('/assets/images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 30, 39, 0.6);
+  z-index: 1;
+}
+
+.hero-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content-header h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.content-header h1 span {
+  color: #e94e3d;
+}
+
+.hero-subtext {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.search-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.property-search-form .search-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 16px;
+}
+
+.search-dropdown,
+.property-search-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.search-btn {
+  background: #0bbd75;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .property-type-icons {
   margin-top: 2rem;
   font-size: 0.95rem;
+  color: #fff;
+}
+
+.property-type-icons p {
+  opacity: 0.8;
+  font-size: 0.85rem;
 }
 
 .property-type-icons ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   margin-top: 10px;
   padding: 0;
   list-style: none;
