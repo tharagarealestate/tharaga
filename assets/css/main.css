@@ -9086,7 +9086,7 @@ section,
 .header {
   background-color: #1a2a30; /* Classy dark blue-grey */
 }
-/* .hero-minimal {
+.hero-minimal {
   background: linear-gradient(145deg, #1E2C34, #101820);
   padding: 140px 20px;
   color: #fff;
@@ -9127,7 +9127,7 @@ section,
 .hero-button:hover {
   color: #fff;
   border-color: #fff;
-} */
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
