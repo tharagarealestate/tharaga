@@ -154,7 +154,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #dce3e8;;
+  --background-color:#1a2a30;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -730,7 +730,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding-top: 80px;
-  background: #e8f1f8;
+  background: linear-gradient(#d8e3ea, #2b3f4a);
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -757,6 +757,12 @@ section,
 
 .hero .hero-content .content-header {
   margin-bottom: 48px;
+}
+
+.hero .hero-content {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .hero .hero-content {
@@ -9077,7 +9083,10 @@ section,
   }
 }
 
-.hero-minimal {
+.header {
+  background-color: #1a2a30; /* Classy dark blue-grey */
+}
+/* .hero-minimal {
   background: linear-gradient(145deg, #1E2C34, #101820);
   padding: 140px 20px;
   color: #fff;
@@ -9118,7 +9127,7 @@ section,
 .hero-button:hover {
   color: #fff;
   border-color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Starter Section Section
